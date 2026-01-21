@@ -1,7 +1,7 @@
 n = int(input())
 p = list(map(int, input().split()))
 
-s = sum(p)
+ss = sum(p)
 ans = 0
 
 for i in range(1 << n):
@@ -10,8 +10,8 @@ for i in range(1 << n):
         if i >> j & 1:
             cs += p[j]
 
-    if cs <= s / 2:
+    if cs <= ss / 2:
         ans = max(ans, cs)
 
-result = s - 2 * ans
+result = ss - 2 * ans
 print(result)
