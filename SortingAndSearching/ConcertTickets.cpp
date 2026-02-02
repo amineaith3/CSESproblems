@@ -28,6 +28,5 @@ int main() {
             sortedTickets.erase(match);
         }
     }
-    
     return 0;
 }
