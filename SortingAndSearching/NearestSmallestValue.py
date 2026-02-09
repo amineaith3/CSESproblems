@@ -13,5 +13,6 @@ def main():
             print(nearestSmall(n, arr[0:i][::-1], arr[i]), end=" ")
     else : 
         pass
+        
 if __name__=="__main__":
     main()
